@@ -8,6 +8,9 @@ namespace RestSharpExamples.Tests
 	[TestFixture]
 	public class DeserializationTests
 	{
+		/// <summary>
+		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
+		/// </summary>
 		[Test]
 		public void CountryAbbreviationSerializationTest()
 		{
@@ -26,6 +29,10 @@ namespace RestSharpExamples.Tests
 			Assert.That(locationResponse.CountryAbbreviation, Is.EqualTo("US"));
 		}
 
+
+		/// <summary>
+		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
+		/// </summary>
 		[Test]
 		public void StateSerializationTest()
 		{

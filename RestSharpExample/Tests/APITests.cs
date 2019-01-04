@@ -1,7 +1,5 @@
 ﻿using NUnit.Framework;
 using RestSharp;
-using RestSharp.Deserializers;
-using RestSharpExample.DataEntities;
 using System.Net;
 
 namespace RestSharpExample.Tests
@@ -9,6 +7,9 @@ namespace RestSharpExample.Tests
 	[TestFixture]
 	public class APITests
 	{
+		/// <summary>
+		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
+		/// </summary>
 		[Test]
 		public void StatusCodeOK()
 		{
@@ -24,8 +25,9 @@ namespace RestSharpExample.Tests
 		}
 
 
-		
-
+		/// <summary>
+		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
+		/// </summary>
 		[TestCase("nl", "3825", HttpStatusCode.OK, TestName = "Check status code for NL zip code 7411")]
 		[TestCase("lv", "1050", HttpStatusCode.NotFound, TestName = "Check status code for LV zip code 1050")]
 		public void StatusCodeTest(string countryCode, string zipCode, HttpStatusCode expectedHttpStatusCode)
@@ -42,7 +44,9 @@ namespace RestSharpExample.Tests
 		}
 
 
-
+		/// <summary>
+		/// Test using API from https://dog.ceo/dog-api/documentation/
+		/// </summary>
 		[Test]
 		public void DogStatusContentType()
 		{
@@ -58,6 +62,9 @@ namespace RestSharpExample.Tests
 		}
 
 
+		/// <summary>
+		/// Test using API from https://dog.ceo/dog-api/documentation/
+		/// </summary>
 		[Test]
 		public void DogResponseStatusCode200()
 		{
@@ -73,6 +80,9 @@ namespace RestSharpExample.Tests
 		}
 
 
+		/// <summary>
+		/// Test using API from https://dog.ceo/dog-api/documentation/
+		/// </summary>
 		[Test]
 		public void DogExpectedContent()
 		{
@@ -87,5 +97,26 @@ namespace RestSharpExample.Tests
 			// assert
 			Assert.That(response.Content.Contains("https://images.dog.ceo/breeds/bulldog-french/n02108915_10204.jpg"));
 		}
+
+
+		/// <summary>
+		/// Test using API from https://dog.ceo/dog-api/documentation/
+		/// </summary>
+		[TestCase("bulldog", "french", HttpStatusCode.OK, TestName = "Check status code for french bulldog")]
+		[TestCase("bulldog", "boston", HttpStatusCode.OK, TestName = "Check status code for boston bulldog")]
+		[TestCase("bulldog", "rob", HttpStatusCode.NotFound, TestName = "Check status code for rob bulldog")]
+		public void DogResponseStatusCodeTestCase(string breed, string subBreed, HttpStatusCode expectedHttpStatusCode)
+		{
+			// arrange
+			RestClient client = new RestClient("https://dog.ceo/api/");
+			RestRequest request = new RestRequest($"/breed/{breed}/{subBreed}/images", Method.GET);
+
+			// act
+			IRestResponse response = client.Execute(request);
+
+			// assert
+			Assert.That(response.StatusCode, Is.EqualTo(expectedHttpStatusCode));
+		}
+
 	}
 }
