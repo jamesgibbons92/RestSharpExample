@@ -2,3 +2,10 @@
       
 # RestSharpExample
 This is an example using RestSharp
+
+## Using OnTestAutomation.com examples
+Using these examples helped me get started. Very easy to follow and clear to understand.
+
+https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
+
+I will start to create my own examples and put these into a CI build.
