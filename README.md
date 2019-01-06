@@ -40,7 +40,7 @@ Also I can use Fiddler alongside Visual Studio and running tests to verify reque
 
 ![ChromeFiddler](https://github.com/RobBrowning/RestSharpExample/blob/master/RestSharpExample/ReadMe_Images/ChromeFiddler.PNG)
       
-![FiddlerIcons](https://github.com/RobBrowning/RestSharpExample/blob/master/RestSharpExample/ReadMe_Images/FiddlerIcons.PNG)
+![FiddlerIcons](https://github.com/RobBrowning/RestSharpExample/blob/master/RestSharpExample/ReadMe_Images/FiddlerIcons.png)
 
 
 ### Builds and Releases
