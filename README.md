@@ -46,4 +46,17 @@ Also I can use Fiddler alongside Visual Studio and running tests to verify reque
 ### Builds and Releases
 
 ### Test examples
+Using RestSharp NuGet package I installed on the project, I used the examples provided in the blog from - https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/ I carried on and used the same structure throughout as it was easy to read and understand the test and steps taken within.
+
+Arrange
+create the client and the request and the type of request i.e. Get method
+
+Act
+Execute the request created
+
+Assert
+Assert the expected outcome depending on the test.
+
+![TestOne](https://github.com/RobBrowning/RestSharpExample/blob/master/RestSharpExample/ReadMe_Images/TestOne.PNG)
+
 
