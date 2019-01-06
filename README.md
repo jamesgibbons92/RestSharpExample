@@ -34,7 +34,14 @@ Reference - https://www.softwaretestingmaterial.com/api-testing/
 
 Start to look at the GUI of the application if it has one, this can quickly give you ideas for tests. Write down parts of the application that could be tested and logic of the application, authentication, authorisation, validation, add, edit, delete, create users? After you have a good understanding of the GUI of the application and keeping in mind the common tests, start to look at the API documentation (if any).
 
-Along with all this knowledge 
+Along with all this knowledge I will use Fiddler application as a proxy to verify requests and responses whilst using the GUI of the application. This is to gather examples of the API calls being used. This can help us better understand the API or spot API calls not documented. 
+
+Also I can use Fiddler alongside Visual Studio and running tests to verify requests and responses.
+
+![ChromeFiddler](https://github.com/RobBrowning/RestSharpExample/blob/master/RestSharpExample/ReadMe_Images/ChromeFiddler.PNG)
+      
+![FiddlerIcons](https://github.com/RobBrowning/RestSharpExample/blob/master/RestSharpExample/ReadMe_Images/FiddlerIcons.PNG)
+
 
 ### Builds and Releases
 
