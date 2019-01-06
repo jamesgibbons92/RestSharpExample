@@ -32,6 +32,10 @@ What needs to be verified in API testing
 
 Reference - https://www.softwaretestingmaterial.com/api-testing/
 
+Start to look at the GUI of the application if it has one, this can quickly give you ideas for tests. Write down parts of the application that could be tested and logic of the application, authentication, authorisation, validation, add, edit, delete, create users? After you have a good understanding of the GUI of the application and keeping in mind the common tests, start to look at the API documentation (if any).
+
+Along with all this knowledge 
+
 ### Builds and Releases
 
 ### Test examples
