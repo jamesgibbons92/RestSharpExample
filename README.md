@@ -11,5 +11,11 @@ https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
 I will start to create my own examples and put these into a CI build.
 
 To get public APIs to practice with I used this list - https://github.com/toddmotto/public-apis
+Also I will use this site for Star Wars data for testing with https://swapi.co/documentation
 
+## How to identify tests to automate API testing
+
+## Builds and Releases
+
+## Test examples
 
