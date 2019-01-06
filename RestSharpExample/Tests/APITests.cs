@@ -28,7 +28,7 @@ namespace RestSharpExample.Tests
 		/// <summary>
 		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
 		/// </summary>
-		[TestCase("nl", "3825", HttpStatusCode.OK, TestName = "Check status code for NL zip code 7411")]
+		[TestCase("nl", "7411", HttpStatusCode.OK, TestName = "Check status code for NL zip code 7411")]
 		[TestCase("lv", "1050", HttpStatusCode.NotFound, TestName = "Check status code for LV zip code 1050")]
 		public void StatusCodeTest(string countryCode, string zipCode, HttpStatusCode expectedHttpStatusCode)
 		{
