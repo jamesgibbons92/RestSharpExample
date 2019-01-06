@@ -14,10 +14,23 @@ To get public APIs to practice with I used this list - https://github.com/toddmo
 Also I will use this site for Star Wars data for testing with https://swapi.co/documentation
 
 ### How to identify tests to automate API testing
+The hardest part I find is identifying the tests to automate, I start with the below thoughts of typical API testing, 
+
+Common Tests
 * To verify whether the return value is based on input condition. Response of the APIs should be verified based on the request.
 * To verify whether the system is authenticating the outcome when the API is updating any data structure
 * To verify whether the API triggers some other event or request another API
-* To verify the behavior of the API when there is no return value
+* To verify the behaviour of the API when there is no return value
+
+What needs to be verified in API testing
+* Data accuracy
+* HTTP status codes
+* Response time
+* Error codes in case API returns any errors
+* Authorization checks
+* Non functional testing such as performance testing, security testing
+
+Reference - https://www.softwaretestingmaterial.com/api-testing/
 
 ### Builds and Releases
 
