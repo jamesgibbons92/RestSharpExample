@@ -27,8 +27,9 @@ C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\Newtonsoft.Json.xml
 C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\nunit.framework.pdb
 C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\nunit.framework.xml
 C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\RestSharp.xml
-C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.csprojAssemblyReference.cache
 C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.csproj.CoreCompileInputs.cache
 C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.csproj.CopyComplete
 C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.dll
 C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.pdb
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\RestSharpExample.dll.CodeAnalysisLog.xml
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\RestSharpExample.dll.lastcodeanalysissucceeded
