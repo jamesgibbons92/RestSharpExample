@@ -1,10 +1,7 @@
-﻿using Newtonsoft.Json.Linq;
-using NUnit.Framework;
+﻿using NUnit.Framework;
 using RestSharp;
 using RestSharp.Deserializers;
 using RestSharpExample.DataEntities;
-using System;
-using System.Collections.Generic;
 
 namespace RestSharpExamples.Tests
 {
