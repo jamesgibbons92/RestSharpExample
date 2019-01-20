@@ -11,6 +11,7 @@ namespace RestSharpExample.Tests
 		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
 		/// </summary>
 		[Test]
+		[Category("Build")]
 		public void StatusCodeOK()
 		{
 			// arrange
@@ -30,6 +31,7 @@ namespace RestSharpExample.Tests
 		/// </summary>
 		[TestCase("nl", "7411", HttpStatusCode.OK, TestName = "Check status code for NL zip code 7411")]
 		[TestCase("lv", "1050", HttpStatusCode.NotFound, TestName = "Check status code for LV zip code 1050")]
+		[Category("Build")]
 		public void StatusCodeTest(string countryCode, string zipCode, HttpStatusCode expectedHttpStatusCode)
 		{
 			// arrange
@@ -48,6 +50,7 @@ namespace RestSharpExample.Tests
 		/// Test using API from https://dog.ceo/dog-api/documentation/
 		/// </summary>
 		[Test]
+		[Category("Build")]
 		public void DogStatusContentType()
 		{
 			// arrange
@@ -66,6 +69,7 @@ namespace RestSharpExample.Tests
 		/// Test using API from https://dog.ceo/dog-api/documentation/
 		/// </summary>
 		[Test]
+		[Category("Build")]
 		public void DogResponseStatusCode200()
 		{
 			// arrange
@@ -84,6 +88,7 @@ namespace RestSharpExample.Tests
 		/// Test using API from https://dog.ceo/dog-api/documentation/
 		/// </summary>
 		[Test]
+		[Category("Build")]
 		public void DogExpectedContent()
 		{
 			// arrange
@@ -105,6 +110,7 @@ namespace RestSharpExample.Tests
 		[TestCase("bulldog", "french", HttpStatusCode.OK, TestName = "Check status code for french bulldog")]
 		[TestCase("bulldog", "boston", HttpStatusCode.OK, TestName = "Check status code for boston bulldog")]
 		[TestCase("bulldog", "rob", HttpStatusCode.NotFound, TestName = "Check status code for rob bulldog")]
+		[Category("Build")]
 		public void DogResponseStatusCodeTestCase(string breed, string subBreed, HttpStatusCode expectedHttpStatusCode)
 		{
 			// arrange

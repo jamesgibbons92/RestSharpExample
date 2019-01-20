@@ -1,7 +1,10 @@
-﻿using NUnit.Framework;
+﻿using Newtonsoft.Json.Linq;
+using NUnit.Framework;
 using RestSharp;
 using RestSharp.Deserializers;
 using RestSharpExample.DataEntities;
+using System;
+using System.Collections.Generic;
 
 namespace RestSharpExamples.Tests
 {
@@ -12,6 +15,7 @@ namespace RestSharpExamples.Tests
 		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
 		/// </summary>
 		[Test]
+		[Category("Build")]
 		public void CountryAbbreviationSerializationTest()
 		{
 			// arrange
@@ -34,6 +38,7 @@ namespace RestSharpExamples.Tests
 		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
 		/// </summary>
 		[Test]
+		[Category("Build")]
 		public void StateSerializationTest()
 		{
 			// arrange
