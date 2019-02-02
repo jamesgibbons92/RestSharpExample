@@ -48,6 +48,66 @@ Also I can use Fiddler alongside Visual Studio and running tests to verify reque
 ### Test examples
 Using RestSharp NuGet package I installed on the project, I used the examples provided in the blog from - https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/ I carried on and used the same structure throughout as it was easy to read and understand the test and steps taken within.
 
+For deserialisation tests you can use http://json2csharp.com/ to paste the json response and convert to Csharp for testing.
+
+Example below -
+
+```
+using Newtonsoft.Json;
+using System.Collections.Generic;
+
+namespace RestSharpExample.DataEntities
+{
+	public class LocationResponse
+	{
+		[JsonProperty("post code")]
+		public string PostCode { get; set; }
+		[JsonProperty("country")]
+		public string Country { get; set; }
+		[JsonProperty("country abbreviation")]
+		public string CountryAbbreviation { get; set; }
+		[JsonProperty("places")]
+		public List<Place> Places { get; set; }
+	}
+}
+```
+
+A RestSharp test using the above class
+
+```
+using NUnit.Framework;
+using RestSharp;
+using RestSharp.Deserializers;
+using RestSharpExample.DataEntities;
+
+namespace RestSharpExamples.Tests
+{
+	[TestFixture]
+	public class DeserializationTests
+	{
+		/// <summary>
+		/// Test using example from https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/
+		/// </summary>
+		[Test]
+		[Category("Build")]
+		public void CountryAbbreviationSerializationTest()
+		{
+			// arrange
+			RestClient client = new RestClient("http://api.zippopotam.us");
+			RestRequest request = new RestRequest("us/90210", Method.GET);
+
+			// act
+			IRestResponse response = client.Execute(request);
+
+			LocationResponse locationResponse =
+				new JsonDeserializer().
+				Deserialize<LocationResponse>(response);
+
+			// assert
+			Assert.That(locationResponse.CountryAbbreviation, Is.EqualTo("US"));
+		}
+```
+
 Arrange - create the client and the request and the type of request i.e. Get method
 
 Act - Execute the request created
