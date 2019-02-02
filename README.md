@@ -1,5 +1,7 @@
 ![RestSharpLogo](https://github.com/RobBrowning/RestSharpExample/blob/master/RestSharpExample/ReadMe_Images/RestSharp_logo.png)
-      
+
+[![Build status](https://robbrowningtester.visualstudio.com/RestSharpExample/_apis/build/status/RestSharpExample-CI)](https://robbrowningtester.visualstudio.com/RestSharpExample/_build/latest?definitionId=6)
+
 # RestSharpExample
 This is an example using RestSharp
 
