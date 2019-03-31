@@ -50,7 +50,7 @@ Also I can use Fiddler alongside Visual Studio and running tests to verify reque
 ### Test examples
 Using RestSharp NuGet package I installed on the project, I used the examples provided in the blog from - https://www.ontestautomation.com/restful-api-testing-in-csharp-with-restsharp/ I carried on and used the same structure throughout as it was easy to read and understand the test and steps taken within.
 
-For deserialisation tests you can use http://json2csharp.com/ to paste the json response and convert to Csharp for testing. You can also use this url to get schema https://www.liquid-technologies.com/online-json-to-schema-converter
+For deserialisation tests you can use http://json2csharp.com/ to paste the json response and convert to Csharp for testing. You can also use this url to get schema https://www.liquid-technologies.com/online-json-to-schema-converter or https://jsonschema.net/
 
 Example below -
 
