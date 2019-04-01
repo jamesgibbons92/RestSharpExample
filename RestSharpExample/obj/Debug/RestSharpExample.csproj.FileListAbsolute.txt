@@ -31,5 +31,10 @@ C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.cspr
 C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.csproj.CopyComplete
 C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.dll
 C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.pdb
-C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\RestSharpExample.dll.CodeAnalysisLog.xml
-C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\RestSharpExample.dll.lastcodeanalysissucceeded
+C:\working_git\RestSharpExample\RestSharpExample\obj\Debug\RestSharpExample.csprojAssemblyReference.cache
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\log4net.dll
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\WebDriver.dll
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\WebDriver.Support.dll
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\log4net.xml
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\WebDriver.xml
+C:\working_git\RestSharpExample\RestSharpExample\bin\Debug\WebDriver.Support.xml
