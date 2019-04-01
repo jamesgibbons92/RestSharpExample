@@ -125,7 +125,7 @@ Simple example using RestSharp to assert responses when visiting pages, then usi
 
 
 Full Test example below -
-
+```
 using NUnit.Framework;
 using RestSharp;
 using System.Net;
@@ -181,4 +181,4 @@ namespace RestSharpExample.Tests
 		}
 	}
 }
-
+```
