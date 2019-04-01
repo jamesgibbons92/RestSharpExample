@@ -1,9 +1,4 @@
 ﻿using RestSharp;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace RestSharpExample.http
 {
@@ -21,9 +16,9 @@ namespace RestSharpExample.http
 		}
 
 
-		public IRestResponse get500()
+		public IRestResponse getStatusCode(string URL)
 		{
-			var client = new RestClient("http://the-internet.herokuapp.com/status_codes/500");
+			var client = new RestClient(URL);
 			var request = new RestRequest(Method.GET);
 			request.AddHeader("cache-control", "no-cache");
 			IRestResponse response = client.Execute(request);

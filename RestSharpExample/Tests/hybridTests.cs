@@ -30,12 +30,13 @@ namespace RestSharpExample.Tests
 		{
 			//Arrange and act
 			//WebDriver opens ChromeDriver and navigates to the page
-			Driver.Navigate().GoToUrl("http://the-internet.herokuapp.com/status_codes/500");
+			string url = "http://the-internet.herokuapp.com/status_codes/500";
+			Driver.Navigate().GoToUrl(url);
 			pageObjects objects = new pageObjects(Driver);
 
 			//RestSharp sends request
 			api API = new api();
-			IRestResponse response = API.get500();			
+			IRestResponse response = API.getStatusCode(url);
 
 			//Assert status code is 500
 			Assert.That(response.StatusCode, Is.EqualTo(HttpStatusCode.InternalServerError));
