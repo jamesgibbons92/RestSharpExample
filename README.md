@@ -121,7 +121,7 @@ Assert - Assert the expected outcome depending on the test.
 ### Hybrid Tests
 This example is using a combination of RestSharp and Selenium WebDriver.
 
-Simple example using RestSharp to assert responses when visiting pages, then using WebDriver to assert page object elements on the UI.
+I wanted to start with a proof of concept of using RestSharp alongside WebDriver. For this it was simply navigating to a page getting the response from the page, asserting the response was Internal Server Error (500) and then with WebDriver asserting elements on the page.
 
 
 Full Test example below -
@@ -182,3 +182,18 @@ namespace RestSharpExample.Tests
 	}
 }
 ```
+The API.getStatusCode(url); passes the url as a string to the method getStatusCode then returns the reponse. 
+
+```
+                public IRestResponse getStatusCode(string URL)
+		{
+			var client = new RestClient(URL);
+			var request = new RestRequest(Method.GET);
+			request.AddHeader("cache-control", "no-cache");
+			IRestResponse response = client.Execute(request);
+			return response;
+		}
+```
+
+Next I will have examples of tests using 'seams' as short cuts through applications using RestSharp to build the test data and navigate to that place within the web application. Then again using WebDriver to assert elements.
+
