@@ -58,6 +58,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="gui\LoginManager.cs" />
     <Compile Include="gui\pageObjects.cs" />
     <Compile Include="http\api.cs" />
     <Compile Include="http\payloads.cs" />
