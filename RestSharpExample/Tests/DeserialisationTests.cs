@@ -1,6 +1,7 @@
 ﻿using NUnit.Framework;
 using RestSharp;
 using RestSharp.Deserializers;
+using RestSharp.Serialization.Json;
 using RestSharpExample.DataEntities;
 
 namespace RestSharpExamples.Tests

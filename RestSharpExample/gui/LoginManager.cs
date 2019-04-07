@@ -22,6 +22,8 @@ namespace RestSharpExample.gui
 			{
 				Cookie cookie = new Cookie(name, value);
 				driver.Manage().Cookies.AddCookie(cookie);
+			    Cookie cookie2 = new Cookie("optimizelyEndUserId", "oeu1554041438837r0.6506281397878788414");
+			    driver.Manage().Cookies.AddCookie(cookie2);
 			}
 	}
 }
